@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background: url(https://templated.co/items/demos/industrious/images/bg.jpg);
+    font-family: 'Raleway', sans-serif;
+    color: #444444;
+}
+
+header {
+    background-color: #111111;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-section {
+    position: relative;
+    text-align: center;
+}
+
+.video-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.video-title h1 {
+    font-size: 64px;
+    color: white;
+}
+
+.video-title p {
+    font-size: 24px;
+}
+
+.company-icons {
+    background:rgba(255,255,255, 0.9);
+    padding: 64px 0 32px;
+}
+
+.company-icons>div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.icons-title {
+    text-align: center;
+}
+
+.icons-title h2 {
+    font-size: 36px;
+    color: #555555;
+    margin-bottom: 24px;
+}
+
+.icons-title p {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 30px;
+    color: #444444;
+    font-size: 15px;
+}
+
+.company-offers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.company-offers div {
+    width: 220px;
+    text-align: center;
+    background-color: white;
+    line-height: 1.5;
+    padding: 48px;
+}
+
