@@ -4,24 +4,34 @@ body {
     background: url(https://templated.co/items/demos/industrious/images/bg.jpg);
     font-family: 'Raleway', sans-serif;
     color: #444444;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+
 
 header {
     background-color: #111111;
-    padding: 20px 23px;
+    padding: 20px 0;
     font-size: 17px;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    margin-right: 23px;
 }
 
 header a {
     text-decoration: none;
     color: white;
     font-weight: 600;
-    display: inline-block;
-}
-
-header div {
-    display: inline-block;
-    float: right;
+    margin-left: 23px;
 }
 
 header div p {
@@ -31,21 +41,56 @@ header div p {
 .banner-section {
     position: relative;
     text-align: center;
+    height: 512px;
+    overflow: hidden;
 }
+
+.banner-section:after {
+    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+video{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
 
 .video-title {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0 auto;
+    width: 848px;
+    max-width: calc(100% - 96px);
 }
 
 .video-title h1 {
     font-size: 64px;
     color: white;
+    margin-bottom: 16px;
 }
 
 .video-title p {
     font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.7;
+}
+
+.video-title a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5)
 }
 
 .company-icons {
@@ -85,12 +130,168 @@ header div p {
 }
 
 .company-offers div {
-    width: 320px;
+    width: 250px;
     text-align: center;
     background-color: white;
     line-height: 1.5;
     padding: 48px;
-    height: 356px;
-    margin: 0 25px 25px 0;
+    height: 300px;
+    margin: 0 25px 44px 0;
 }
 
+.company-offers div h2 {
+    margin: 25px 0;
+}
+
+.red-gradient-wrapper {
+    height: 380px;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(https://templated.co/items/demos/industrious/images/cta01.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.red-gradient-wrapper div {
+    margin: 0 auto;
+    width: 75rem;
+    max-width: calc(100% - 6rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.7;
+}
+
+.red-gradient-wrapper h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.company-contact {
+    padding: 128px 0 96px;
+    background:rgba(255,255,255, 0.9);
+}
+
+.company-contact-title {
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.company-contact h2 {
+    font-size: 36px;
+    color: #555555;
+    margin-bottom: 22px;
+}
+
+.company-contact p {
+    font-size: 15px;
+    color: #444444;
+}
+
+.company-managment {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.company-managment img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.worker {
+    width: 260px;
+    background: white;
+    padding: 54px;
+}
+
+.worker-text {
+    width: 200px;
+    line-height: 1.7;
+    padding: 16px 0 16px 32px;
+    margin-bottom: 32px;
+    border-left: 8px solid rgba(0, 0, 0, 0.25);
+}
+
+.worker-bio p {
+    display: inline-block;
+}
+
+.worker-bio span {
+    color: #ce1b28;
+}
+
+footer {
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 128px 0 96px 0;
+}
+
+footer h2 {
+    margin-bottom: 24px;
+    color: white;
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-wrapper {
+    width: 68%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.wrapper-title {
+    width: 50%;
+}
+
+.wrapper-title p {
+    line-height: 1.7;
+}
+
+.wrapper-title h2 {
+    font-size: 18px;
+}
+
+ul {
+    line-height: 3;
+}
+
+.company-links .bordered-list li {
+    border-bottom: 1px solid grey;
+}
+
+.company-links .bordered-list li:last-child  {
+    border: transparent;
+}
+
+.company-links {
+    width: 25%;
+    margin-right: 50px;
+}
+
+footer svg {
+    margin-right: 20px;
+}
+
+li:hover a {
+    color: #ce1b28;
+}
+
+.company-social {
+    vertical-align: middle;
+}
