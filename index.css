@@ -8,17 +8,24 @@ body {
 
 header {
     background-color: #111111;
+    padding: 20px 23px;
+    font-size: 17px;
 }
 
 header a {
     text-decoration: none;
     color: white;
     font-weight: 600;
+    display: inline-block;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
+header div {
+    display: inline-block;
+    float: right;
+}
+
+header div p {
+    color: #888888;
 }
 
 .banner-section {
@@ -43,16 +50,16 @@ header {
 
 .company-icons {
     background:rgba(255,255,255, 0.9);
-    padding: 64px 0 32px;
+    padding: 104px 0;
 }
 
 .company-icons>div {
-    width: 90%;
     margin: 0 auto;
 }
 
 .icons-title {
     text-align: center;
+    width: 54%;
 }
 
 .icons-title h2 {
@@ -63,7 +70,7 @@ header {
 
 .icons-title p {
     width: 85%;
-    margin: 0 auto;
+    margin: 0 auto 32px;
     line-height: 30px;
     color: #444444;
     font-size: 15px;
@@ -73,13 +80,17 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 40px 0 0;
+    width: 75%;
 }
 
 .company-offers div {
-    width: 220px;
+    width: 320px;
     text-align: center;
     background-color: white;
     line-height: 1.5;
     padding: 48px;
+    height: 356px;
+    margin: 0 25px 25px 0;
 }
 
